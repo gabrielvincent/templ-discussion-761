@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	ctx := context.Background()
 	components.Index().Render(ctx, os.Stdout)
 }
