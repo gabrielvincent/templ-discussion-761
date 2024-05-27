@@ -30,7 +30,7 @@ func Component() templ.Component {
 		if hasChildren {
 			text = "I have children! Here they are:"
 		} else {
-			text = "I don't Don't have children."
+			text = "I don't have children."
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<p>")
 		if templ_7745c5c3_Err != nil {
