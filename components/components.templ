@@ -1,0 +1,27 @@
+package components
+
+templ Component() {
+	{{
+	ch := templ.GetChildren(ctx)
+	hasChildren := ch != nil
+	var text string
+	if hasChildren {
+		text = "I have children! Here they are:"
+	} else {
+		text = "I don't Don't have children."
+	}
+	}}
+	<p>{ text }</p>
+	<div>
+		{ children... }
+	</div>
+}
+
+templ Index() {
+	@Component()
+	@Component() {
+		<div>Child 1</div>
+		<div>Child 2</div>
+		<div>Child 3</div>
+	}
+}
